@@ -113,6 +113,15 @@
                     <input type="checkbox" id="id_is_private" name="is_private" ${'checked="checked"' if job.is_private else ''} />
                 </div>
             </div>
+            <div class="control-group">
+                <label class="control-label" for="ideditor_link">iDEditor Link</label>
+                <div class="controls">
+                    <input type="text" id="id_ideditor_link" name="ideditor_link" value="${job.ideditor_link}"/>
+                    <p class="help-block">
+                        <strong>Note:</strong> Override default link to OSM.org iD editor.
+                    </p>
+                </div>
+            </div>
             <div class="row">
                 <div class="span7">
                     <div class="control-group">

@@ -101,6 +101,11 @@
         % else:
         var license_accepted = false;
         % endif
+	% if len(job.ideditor_link) > 0:
+	var ideditor_link = "${job.ideditor_link}";
+	% else:
+	var ideditor_link = "http://www.openstreetmap.org/edit?editor=id"
+	% endif
 
         $(function() {
             $('#task_tab').tab('show');

@@ -151,6 +151,7 @@ class Job(Base):
     josm_preset = Column(Unicode)
     is_private = Column(Boolean)
     featured = Column(Boolean)
+    ideditor_link = Column(Unicode)
     # percentage done
     done = Column(Integer)
     last_update = Column(DateTime)

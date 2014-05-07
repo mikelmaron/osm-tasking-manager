@@ -63,7 +63,7 @@ var exportOpen = function() {
         break;
     case "id":
         url = getLink({
-            base: 'http://www.openstreetmap.org/edit?editor=id',
+            base: ideditor_link,
             bounds: bounds,
             zoom: zoom,
             protocol: 'id'
